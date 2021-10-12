@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Updates;
 
-namespace GameFlow
+namespace Code.GameFlow
 {
     internal class Controllers : IInitializable, IUpdatable, IFixedUpdatable, ILateUpdatable, ICleanup
     {
