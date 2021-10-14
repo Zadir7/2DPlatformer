@@ -15,17 +15,18 @@ MonoBehaviour:
   spriteSequences:
   - type: 0
     sprites:
-    - {fileID: -8408680621071802262, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: 2020563912116090603, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: 3849136173088306821, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: 4028242178453425959, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: 1668037937834423401, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: -7484286492027541573, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: -8219087091140627760, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: 1383575054225115981, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: 5125728163368428710, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: -8166396994557932214, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
-    - {fileID: -71587961595109507, guid: f9ce12747dd8ffb4ebe5f14ab04f32b1, type: 3}
+    - {fileID: 21300000, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300002, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300004, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300006, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300008, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300010, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300012, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300014, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300016, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300018, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300020, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
+    - {fileID: 21300022, guid: dd3cc307ddf45074781b8aecf9e6c090, type: 3}
   - type: 1
     sprites:
     - {fileID: 21300000, guid: 29ad5d5f2cee0114884952cc2730fb66, type: 3}
