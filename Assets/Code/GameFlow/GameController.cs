@@ -1,5 +1,6 @@
 using Code.Configs;
 using Code.Controllers;
+using Code.Controllers.Player;
 using Code.Views;
 using UnityEngine;
 
@@ -8,22 +9,28 @@ namespace Code.GameFlow
     public class GameController : MonoBehaviour
     {
         [SerializeField] private PlayerView playerView;
-        
+
+        private InputManager _inputManager;
         private Controllers _controllers;
+
+        private PlayerController _playerController;
         
         private SpriteAnimatorConfig _playerAnimatorConfig;
         private SpriteAnimatorController _playerAnimatorController;
 
         private void Start()
         {
+            _inputManager = new InputManager();
+            _inputManager.Enable();
             _controllers = new Controllers();
 
             _playerAnimatorConfig = Resources.Load<SpriteAnimatorConfig>("PlayerAnimatorConfig");
             _playerAnimatorController = new SpriteAnimatorController(_playerAnimatorConfig);
+            _playerController = new PlayerController(_inputManager, playerView, _playerAnimatorController);
 
-            _playerAnimatorController.StartAnimation(playerView.Renderer, AnimationType.Run, true);
 
             _controllers.Add(_playerAnimatorController);
+            _controllers.Add(_playerController);
             
             _controllers.Init();
         }
@@ -48,6 +55,7 @@ namespace Code.GameFlow
 
         private void OnDestroy()
         {
+            _inputManager.Disable();
             _controllers.Cleanup();
         }
     }

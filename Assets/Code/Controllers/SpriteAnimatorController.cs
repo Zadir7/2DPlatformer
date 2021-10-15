@@ -33,14 +33,12 @@ namespace Code.Controllers
             }
             else
             {
+                if (animation.Track == track) return;
                 animation.ResetCounter();
-                if (animation.Track != track)
-                {
-                    animation.Track = track;
-                    animation.Sprites = _config.spriteSequences.Find(x => x.type == track).sprites;
-                    animation.IsLooped = isLooped;
-                    animation.AnimationSpeed = speed;
-                }
+                animation.Track = track;
+                animation.Sprites = _config.spriteSequences.Find(x => x.type == track).sprites;
+                animation.IsLooped = isLooped;
+                animation.AnimationSpeed = speed;
             }
         }
 
