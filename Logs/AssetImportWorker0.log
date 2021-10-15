@@ -2262,3 +2262,49 @@ Received Import Request.
   path: Assets/Code/Configs/Resources/PlayerAnimatorConfig.asset
   artifactKey: Guid(aa5386e05ffb3a544a334f0f88fa1b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Code/Configs/Resources/PlayerAnimatorConfig.asset using Guid(aa5386e05ffb3a544a334f0f88fa1b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b239ee3936246cdb112ffff8c9115d40') in 0.027057 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004892 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProjects\2DPlatformer\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProjects\2DPlatformer\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.426 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3678 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.3 MB.
+System memory in use after: 140.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 4530.
+Total: 3.928900 ms (FindLiveObjects: 0.430200 ms CreateObjectMapping: 0.191800 ms MarkObjects: 3.133100 ms  DeleteObjects: 0.171400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 236.770547 seconds.
+  path: Assets/Code/Configs/Resources/PlayerAnimatorConfig.asset
+  artifactKey: Guid(aa5386e05ffb3a544a334f0f88fa1b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/Configs/Resources/PlayerAnimatorConfig.asset using Guid(aa5386e05ffb3a544a334f0f88fa1b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47baf7bc348d8b930d4b2ecc82e1891') in 0.018657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.852576 seconds.
+  path: Assets/Code/Controllers/Player
+  artifactKey: Guid(569f3f4f7dc04dfe96192c2a9bb9f44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/Controllers/Player using Guid(569f3f4f7dc04dfe96192c2a9bb9f44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79c20cafff8ca6d8f86969042bba602') in 0.002138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.102443 seconds.
+  path: Assets/Code/Controllers/Player/PlayerMovementController.cs
+  artifactKey: Guid(bb04a2e0843647e585ac995510d0de13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/Controllers/Player/PlayerMovementController.cs using Guid(bb04a2e0843647e585ac995510d0de13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c71cb54339791790960b4510b565a6') in 0.001962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.528529 seconds.
+  path: Assets/Code/Controllers/Player/PlayerController.cs
+  artifactKey: Guid(a6454d7d7d5547f0b09e1d92ca631a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Code/Controllers/Player/PlayerController.cs using Guid(a6454d7d7d5547f0b09e1d92ca631a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae4589fe6ffb20001dc4a15a824556c') in 0.002681 seconds 
