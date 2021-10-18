@@ -9,7 +9,6 @@ namespace Code.Views
 
         public void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("collided");
             OnLevelEndEnter.Invoke(other);
         }
     }
