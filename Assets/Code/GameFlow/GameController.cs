@@ -1,3 +1,4 @@
+using System;
 using Code.Configs;
 using Code.Controllers;
 using Code.Controllers.Player;
@@ -9,6 +10,8 @@ namespace Code.GameFlow
     public class GameController : MonoBehaviour
     {
         [SerializeField] private PlayerView playerView;
+        [SerializeField] private LevelEndView levelEndView;
+        public event Action OnLevelEnd = () => { };
 
         private InputManager _inputManager;
         private Controllers _controllers;
@@ -24,6 +27,9 @@ namespace Code.GameFlow
             _inputManager.Enable();
             _controllers = new Controllers();
 
+            
+            SubscribeEvents();
+
             _playerAnimatorConfig = Resources.Load<SpriteAnimatorConfig>("PlayerAnimatorConfig");
             _playerAnimatorController = new SpriteAnimatorController(_playerAnimatorConfig);
             _playerController = new PlayerController(_inputManager, playerView, _playerAnimatorController);
@@ -33,6 +39,31 @@ namespace Code.GameFlow
             _controllers.Add(_playerController);
             
             _controllers.Init();
+        }
+
+        private void SubscribeEvents()
+        {
+            levelEndView.OnLevelEndEnter += LevelEndEnter;
+            OnLevelEnd += EndLevel;
+        }
+
+        private void UnsubscribeEvents()
+        {
+            levelEndView.OnLevelEndEnter -= LevelEndEnter;
+            OnLevelEnd -= EndLevel;
+        }
+
+        private void LevelEndEnter(Collider2D objCollider)
+        {
+            if (objCollider == playerView.ViewCollider)
+            {
+                OnLevelEnd.Invoke();
+            }
+        }
+
+        private void EndLevel()
+        {
+            Debug.Log("Level finished");
         }
 
         private void Update()
@@ -55,6 +86,7 @@ namespace Code.GameFlow
 
         private void OnDestroy()
         {
+            UnsubscribeEvents();
             _inputManager.Disable();
             _controllers.Cleanup();
         }
