@@ -8,7 +8,7 @@ namespace Code.Controllers
 {
     public class SpriteAnimatorController : IUpdatable, ICleanup
     {
-        private const float DefaultAnimationSpeed = 6.0f;
+        private const float DefaultAnimationSpeed = 4.0f;
         
         private readonly SpriteAnimatorConfig _config;
         private readonly List<Animation> _activeAnimations = new List<Animation>();
